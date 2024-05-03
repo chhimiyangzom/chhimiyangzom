@@ -2,196 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-UA-compatible" contact=""IE=edge>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal portfolio website - Easy Tutorials</title>
-    <link rel="stylesheet" href="styel.css"> 
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div id="header">
-    <div class="container">
-        <nav>
-           <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-            <i class="fa-solid fa-bars"></i>
-        </nav>
-        
-        <div class="header-text">
-            <P>UX Designer</P>
-            <h1>Hello,i m </span>chhimi yangzom<br>from bhutan</b></h1>
-           
-        </div>
-    </div>
-</div>
-<!-----about----->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="./Assets/image/download__7_-removebg-preview.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <p>I am chhimi yangzom, i am from momring which is under samdrupjongkhar. but currently staying in phuentsholing. 
-                    we have eight families including myself. I completed grade 12 from Minjiwoong central school which is under samdrupjongkhar. i completed as arts student in the year 
-                    2021 though i am not as much known about the developer but i am very intrested as a web developer. I am exprienced at the field of sersang compuny around a month and as wall done with ict foundation. but i
-                    hope that being a web developer i might be well exprienced</p>
-                   
-        </div>
-    </div>
-
-<!----services---->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <h1>Web application</h1>
-                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. loren lpsum has been the industry</p>
-                <a href="#">Read more</a>
-            </div>
-            <div>
+    <h1>BMI Calculator</h1>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" name="weight" step="0.01"><br><br>
+    <label for="height">Height (m):</label>
+    <input type="number" id="height" name="height" step="0.01"><br><br>
+    <button onclick="calculateBMI()">Calculate BMI</button><br><br>
+    <h2>Your BMI is</h2>
+    <div id="result">00.00</div>
+    <p class="comment">comment: you are <span
+    di="comment">overweight</span></p>
+    <script src="./javascript.js"></script>
     
-                <h1>Responsive design</h1>
-                <p>Lorem lpsum is simply dummy text of the printing and typesetting industry, lorem lpsum has been then industry</p>
-                <a href="#">Read more</a>
-            </div>
-            <div>
-    
-                <h1>Dedicated support</h1>
-                <p>Lorem  lpsum is simply dummy text of the printing and typesetting industry, lorem ipsum has been the industry</p>
-                <a href="#">Read more</a>
-            </div>  
-        </div>
-    </div>
-</div>
-<!------portfolio---->  
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1> 
-        <div class="work-list">
-            <div class="work">
-                <img src="./Assets/image/images (6).jpg">   
-                <div class="layer">
-                    <h3>Ema datshi</h3>
-                    <P>Ema datshi, the national dish of Bhutan is a deliciousEma Datshi, the national disly spicy stew made of chili peppers, onions and locally produced yak cheese.</p>
-                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-                </div>
-            </div>
-        <div class="work">
-            <img src="./Assets/image/images (5).jpg">
-            <div class="layer">
-                <h2>kewa datshi</h2>
-                <P>kewa datshi, literally meaning potatoes and cheese, is a traditional Bhutanese dish made with chiles and garlic that is a vegetarian stew.</p>
-                <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-        </div>
-        <div class="work">
-            <img src="./Assets/image/download (8).jpg">
-            <div class="layer">
-                <h2>Chicken Chili</h2>
-                <P>Flavorful White Chicken Chili made with hearty beans, tender chicken, and a rich and creamy broth.</p>
-                <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-        </div>
-        </div>
-        <div class="work">
-            <img src="./Assets/image/images (4).jpg">
-            <div class="layer">
-                <h2>kewa datshi momos</h2>
-                <p>when we add any other vegetable such as mushrooms, potatoes or beans, we add less chillies</p>
-                    
-
-
-                </p>
-                <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
-        </div>
-        </div>
-    </div>   
-
-
-<!----contact---->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>Name: chhimi yangzom</p>
-                <p>Contact No: 17878808</p>
-                <p>Email address: chhimiyangzom01@gmail.com</p>
-                <p>Location: phuntsholing,town</p>
-                <div class="social-icons">
-            </div>
-            <a href="images/my-cv.pdf" class="btn">Download cv</a>
-        </div>
-        <div class=" contact-righr">
-            <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder= "Your email" required>
-                <textarea name="massage" rows="6" placeholder="Your massage"></textarea>
-                <button type="submit" class="">submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="copyright">
-    <p>copyright@chhimiyangzom.com <i class="fas fa-heart"></i></p>
-                
-            </div>
-            
-        </div>
-        <div class="contact-righr">
-            <form>
-        </div>
-    </div>
 </body>
 </html>
-
-<!-- footer Section -->
-<div class="container-1">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-        </a>
-        <p class="text-body-secondary">© 2024</p>
-      </div>
-    <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-    <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-    <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
-
-
